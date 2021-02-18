@@ -14,10 +14,29 @@
 
 int main()
 {
+  
+  
    //Declare all the variables[N, array a & array b, i] used in the code
+   int n,a[100],b[100],i;
    //Read the Value of N using scanf statement
+   printf("Enter the number of elements\n ");
+   scanf("%d",&n);
    //Read the array elements using for loop and scanf statment
+   for(i=0; i<n; i++)
+  scanf("%d",&a[i]);
    //Copy the elements of array 'a'[first array] to  array 'b'[second array] using for loop
+   for(i=0; i<n; i++)
+   {
+     b[i]=a[i];
+   }
    //Print the both array elements in using printf statement in the above specified format
+   for(i=0; i<n; i++)
+   {
+  printf("%d\n", a[i]);
+   }
+  for(i=0; i<n; i++)
+  {
+  printf("%d\n", b[i]);
+  }
    return 0; 
 }
